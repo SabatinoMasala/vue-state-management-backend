@@ -10,6 +10,7 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::all();
+        sleep(1);
         return ProductResource::collection($products);
     }
 }

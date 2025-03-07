@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->decimal('price');
             $table->longText('description')->nullable();
+            $table->boolean('use_for_upselling')->default(false);
             $table->timestamps();
         });
     }
