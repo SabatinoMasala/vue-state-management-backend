@@ -61,13 +61,4 @@ class AuthController extends Controller
         ]);
     }
 
-    /**
-     * @param Request $request
-     * @return mixed
-     */
-    public function user(Request $request)
-    {
-        return $request->user();
-    }
-
 }
