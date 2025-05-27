@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DeliveryTimeController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
@@ -23,3 +24,4 @@ Route::group([
 
 // Application routes
 Route::get('/products', [ProductController::class, 'index']);
+Route::get('/delivery-time', [DeliveryTimeController::class, 'index']);
